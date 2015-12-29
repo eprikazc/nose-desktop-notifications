@@ -7,6 +7,6 @@ Inspired by https://github.com/dbader/pytest-osxnotify
 Usage
 -----
 ```shell
-$ pip setup.py install
+$ pip install git+https://github.com/eprikazc/nose-desktop-notifications.git
 $ nosetests example_test.py --with-dn
 ```
