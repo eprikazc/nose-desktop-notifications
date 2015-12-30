@@ -1,6 +1,7 @@
-from subprocess import call
-
 from nose.plugins import Plugin
+import notify2
+
+notify2.init('')
 
 
 class DesktopNotificationPlugin(Plugin):
@@ -20,4 +21,4 @@ class DesktopNotificationPlugin(Plugin):
 def show_desktop_notification(subj, body, is_success):
     # TODO: add support for more operating systems:
     icon = 'stock_yes' if is_success else 'stock_no'
-    call('notify-send "%s" "%s" -i "%s"' % (subj, body, icon), shell=True)
+    notify2.Notification(subj, body, icon).show()
