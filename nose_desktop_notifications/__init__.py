@@ -5,6 +5,7 @@ notify2.init('')
 
 
 class DesktopNotificationPlugin(Plugin):
+    '''Show desktop notification with summary of test results'''
     name = 'dn'
     def finalize(self, result):
         if result.wasSuccessful():
