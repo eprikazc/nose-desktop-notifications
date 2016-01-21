@@ -1,6 +1,6 @@
 nose-desktop-notifications
 ==========================
-Desktop notifications to show nose test run results. Currently works in Ubuntu only.
+Desktop notifications to show nose test run results. Tested in Ubuntu 15.10, but it should work with any desktop environment supporting D-BUS.
 
 Inspired by https://github.com/dbader/pytest-osxnotify
 
